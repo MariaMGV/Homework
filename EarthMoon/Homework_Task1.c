@@ -5,6 +5,7 @@
 
 int main()
 {
+	////
     float gEarth = 9.80;
     float gMoon = 0;
     gMoon = (17 * gEarth) / 100;
