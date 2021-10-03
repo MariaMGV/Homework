@@ -1,19 +1,20 @@
 #include <stdio.h>
+// what is the diference between const and #define ???? In this case , does it matter what I use? => const doble cupToOz || #define CUPTOOZ
+
 
 int main()
 {
    
-   int cupToOz;
-   cupToOz = 8;
-   int userOz;
+   const double cupToOz = 8;
+   double userOz;
  
    
    printf("How many oz do you want?\n");
-   scanf("%d",&userOz);
+   scanf("%lf",&userOz);
    
-     int userCups = (userOz/cupToOz);
+    double userCups = (userOz/cupToOz);
      
-   printf("This is/are %d cup/s.\n",userCups);
+   printf("This is/are %lf cup/s.\n",userCups);
 
 
     return 0;
